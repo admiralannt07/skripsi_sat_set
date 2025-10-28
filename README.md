@@ -29,4 +29,4 @@ GEMINI_API_KEY=YOUR_REAL_GEMINI_API_KEY
 
 ## Catatan
 - Semua request ke Gemini dilakukan via backend (`server.js`) agar API key tetap aman.
-- Untuk instalasi yang konsisten di CI/CD gunakan `npm ci` (menggunakan `package-lock.json`).
+- Server menggunakan port 3000. Ubah di `server.js` jika diperlukan.
