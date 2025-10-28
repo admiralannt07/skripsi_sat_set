@@ -21,7 +21,7 @@ app.post('/api/generate', async (req, res) => {
         const apiKey = process.env.GEMINI_API_KEY;
 
         if (!apiKey) {
-            throw new Error('API key tidak ditemukan di .env');
+            throw new Error('API key tidak ditemukan di .env, buat atau periksa file .env dan tambahkan GEMINI_API_KEY');
         }
 
         // Menggunakan model yang sama dengan frontend
