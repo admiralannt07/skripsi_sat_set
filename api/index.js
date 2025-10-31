@@ -46,6 +46,9 @@ app.post('/api/generate', async (req, res) => {
 });
 
 // Jalankan server
-app.listen(port, () => {
-    console.log(`Server berjalan di http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server berjalan di http://localhost:${port}`);
+// });
+
+// Ekspor aplikasi untuk Vercel
+module.exports = app;
